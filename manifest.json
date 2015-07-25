@@ -1,0 +1,15 @@
+{
+    "name": "tastekid.username",
+    "description": "description of tastekid",
+    "framework": "ubuntu-sdk-15.04-qml",
+    "architecture": "all",
+    "title": "tastekid",
+    "hooks": {
+        "tastekid": {
+            "apparmor": "tastekid.apparmor",
+            "desktop": "tastekid.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "maintainerName"
+}
