@@ -17,13 +17,12 @@ include_directories(
 )
 
 # Where to find the scope ini file and .so
-add_definitions(
-  -DTEST_SCOPE_DIRECTORY="${CMAKE_BINARY_DIR}/src"
-)
+set(TEST_SCOPE_DIRECTORY "${CMAKE_BINARY_DIR}/src")
 
 file(GLOB_RECURSE
   TEST_FIXTURES
-  "server/*" 
+  "server/*.json"
+  "*.py"
 )
 
 # Make this file show up in QtCreator
@@ -32,9 +31,7 @@ add_custom_target(hidden_test_fixtures ALL
 )
 
 # Where to find the test server binary
-add_definitions(
-  -DFAKE_SERVER="${CMAKE_CURRENT_SOURCE_DIR}/server/server.py"
-)
+set(FAKE_SERVER "${CMAKE_CURRENT_SOURCE_DIR}/server/server.py")
 
 # Add the unit tests
 add_subdirectory(unit)
