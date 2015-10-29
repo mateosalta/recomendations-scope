@@ -3,13 +3,13 @@
     "description": "A simple Unity scope that accesses the network",
     "framework": "ubuntu-sdk-15.04",
     "hooks": {
-        "soundcloud": {
-            "apparmor": "soundcloud-qt.apparmor",
-            "scope": "tastekid"
+        "recomendations": {
+            "apparmor": "recomendations.apparmor",
+            "scope": "recomendations"
         }
     },
     "maintainer": "Mateo Salta <mateo_salta@yahoo.com>",
-    "name": "com.ubuntu.developer.mateo_salta.soundcloud-qt",
-    "title": "TasteKid Recomendations",
-    "version": "0.1"
+    "name": "recomendations.mateo-salta",
+    "title": "recomendations",
+    "version": "0.7"
 }
